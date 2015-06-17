@@ -1,0 +1,271 @@
+/* --------------Tile---------------------*/
+
+div label input {
+   margin-right:100px;
+}
+body {
+    font-family:sans-serif;
+}
+
+#ck-button-green-mini {
+    margin-right:13px;
+    margin-left:1px;
+    background-color:#5cb811;
+    border-radius:1px;
+    border:1px solid #D0D0D0;
+    overflow:auto;
+    float:left;
+    color:#fff;
+    font-size: 10px;
+}
+
+#ck-button-green-mini label {
+    float:left;
+    height:2.5em;
+    width:3em;
+}
+
+#ck-button-green-mini label span {
+    text-align:center;
+    padding:5px 5px;
+    display:block;
+}
+
+#ck-button-green-mini label input {
+    position:absolute;
+    top:-20px;
+    display:none;
+}
+
+#ck-button-green-mini input:checked + span {
+    background-color:#41953f;
+    border: #0080ff 3px solid;
+    height:3em;
+    width:3em;
+    color:#fff;
+}
+
+
+#ck-button-green {
+    margin-right:13px;
+    background-color:#5cb811;
+    border-radius:1px;
+    border:1px solid #D0D0D0;
+    overflow:auto;
+    float:left;
+    color:#fff;
+    font-size: 35px;
+}
+
+#ck-button-green label {
+    float:left;
+    height:3.2em;
+    width:3.4em;
+}
+
+#ck-button-green label span {
+    text-align:center;
+	padding:0.9em 1em;
+    display:block;
+}
+
+#ck-button-green label input {
+    position:absolute;
+    top:-20px;
+    display:none;
+}
+
+#ck-button-green input:checked + span {
+    background-color:#41953f;
+    border: #0080ff 5px solid;
+    height:3.335em;
+    width:3.4em;
+    color:#fff;
+} 
+
+#ck-button-red {
+    margin-right:13px;
+    background-color:#ff0000;
+    border-radius:1px;
+    border:1px solid #D0D0D0;
+    overflow:auto;
+    float:left;
+    color:#fff;
+    font-size: 35px;
+}
+
+#ck-button-red label {
+    float:left;
+    height:3.2em;
+    width:3.4em;
+}
+
+#ck-button-red label span {
+    text-align:center;
+	padding:0.9em 1em;
+    display:block;
+}
+
+#ck-button-red label input {
+    position:absolute;
+    top:-20px;
+    display:none;
+}
+
+#ck-button-red input:checked + span {
+    background-color:#cc0000;
+    border: #0080ff 5px solid;
+    height:3.335em;
+    width:3.4em;
+    color:#fff;
+}
+
+#ck-button-orange {
+    margin-right:13px;
+    background-color:#ff8300;
+    border-radius:1px;
+    border:1px solid #D0D0D0;
+    overflow:auto;
+    float:left;
+    color:#fff;
+    font-size: 35px;
+}
+
+#ck-button-orange label {
+    float:left;
+    height:3.2em;
+    width:3.4em;
+}
+
+#ck-button-orange label span {
+    text-align:center;
+	padding:0.8em 1em;
+    display:block;
+}
+
+#ck-button-orange label input {
+    position:absolute;
+    top:-20px;
+    display:none;
+}
+
+#ck-button-orange input:checked + span {
+    background-color:#ffa500;
+    border: #0080ff 5px solid;
+    height:3.335em;
+    width:3.4em;
+    color:#fff;
+}
+
+/* Radio buttons */
+
+#rd-button-green {
+    margin-right:13px;
+    background-color:#5cb811;
+    border-radius:1px;
+    border:1px solid #D0D0D0;
+    overflow:auto;
+    float:left;
+    color:#fff;
+    font-size: 35px;    
+}
+
+#rd-button-green label {
+    float:left;
+    height:3.2em;
+    width:3.4em;
+}
+
+#rd-button-green label span {
+    text-align:center;
+	padding:0.9em 1em;
+    display:block;
+}
+
+#rd-button-green label input {
+    position:absolute;
+    top:-20px;
+    display:none;
+}
+
+#rd-button-green input:checked + span {
+    background-color:#41953f;
+    border: #0080ff 5px solid;
+    height:3.335em;
+    width:3.4em;
+    color:#fff;
+}
+
+#rd-button-red {
+    margin-right:13px;
+    background-color:#ff0000;
+    border-radius:1px;
+    border:1px solid #D0D0D0;
+    overflow:auto;
+    float:left;
+    color:#fff;
+    font-size: 35px;    
+}
+
+#rd-button-red label {
+    float:left;
+    height:3.2em;
+    width:3.4em;
+}
+
+#rd-button-red label span {
+    text-align:center;
+	padding:0.9em 1em;
+    display:block;
+}
+
+#rd-button-red label input {
+    position:absolute;
+    top:-20px;
+    display:none;
+}
+
+#rd-button-red input:checked + span {
+    background-color:#cc0000;
+    border: #0080ff 5px solid;
+    height:3.335em;
+    width:3.4em;
+    color:#fff;
+}
+
+#rd-button-orange {
+    margin-right:13px;
+    background-color:#ff8300;
+    border-radius:1px;
+    border:1px solid #D0D0D0;
+    overflow:auto;
+    float:left;
+    color:#fff;
+    font-size: 35px;    
+}
+
+#rd-button-orange label {
+    float:left;
+    height:3.2em;
+    width:3.4em;
+}
+
+#rd-button-orange label span {
+    text-align:center;
+	padding:0.8em 1em;
+    display:block;
+}
+
+#rd-button-orange label input {
+    position:absolute;
+    top:-20px;
+    display:none;
+}
+
+#rd-button-orange input:checked + span {
+    background-color:#ffa500;
+   	border: #0080ff 5px solid;
+    height:3.335em;
+    width:3.4em;
+    color:#fff;
+}

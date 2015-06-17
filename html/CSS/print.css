@@ -1,0 +1,28 @@
+
+body {
+	color: #000 !important;
+	background: #fff !important;
+	font: 12px/17px Verdana, Geneva, sans-serif !important;
+} 
+
+a {
+  text-decoration: underline;
+  color: #000;
+} 
+header a { text-decoration: none !important; } 
+
+.bottles, #topbox, .footer-box, #navigatie { display:none; }
+.footer-slogan {
+	font: italic 12px/17px Verdana, Geneva, sans-serif !important;
+	padding-top:35px !important;
+}
+
+.logo {
+	font: bold 22px Arial, Helvetica, sans-serif;
+	text-decoration: none !important;
+}
+
+
+h1 { font: bold 18px Arial, Helvetica, sans-serif !important; }
+h2 { font: bold 14px Arial, Helvetica, sans-serif !important; }
+h3 { font: bold 12px Arial, Helvetica, sans-serif !important; }

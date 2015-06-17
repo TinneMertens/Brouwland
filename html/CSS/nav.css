@@ -1,0 +1,310 @@
+
+
+/* SmartMenus Core CSS (it's not recommended editing this)
+===============================================================*/
+
+.sm,.sm ul,.sm li{display:block;list-style:none;padding:0;margin:0;line-height:normal;direction:ltr;}
+ul.sm li{position:relative;}
+ul.sm a{position:relative;display:block;}
+ul.sm a.disabled{cursor:default;}
+ul.sm ul{position:absolute;top:-999999px;left:-800px;width:100px;}
+ul.sm li{float:left;}
+ul.sm-rtl{direction:rtl;}
+ul.sm-rtl li{float:right;}
+ul.sm ul li,ul.sm-vertical li{float:none;}
+ul.sm a{white-space:nowrap;}
+ul.sm ul a,ul.sm-vertical a{white-space:normal;}
+* html ul.sm-vertical li{float:left;width:100%;}
+* html ul.sm-vertical ul li{float:none;width:auto;}
+*:first-child+html ul.sm-vertical>li{float:left;width:100%;}
+ul.sm ul.sm-nowrap>li>a{white-space:nowrap;}
+ul.sm:after{content:"\00a0";display:block;height:0;font:0/0 serif;clear:both;visibility:hidden;overflow:hidden;}
+* html ul.sm{height:1px;}
+*:first-child+html ul.sm{min-height:1px;}
+ul.sm li *,ul.sm li *:before,ul.sm li *:after{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
+ul.sm{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+
+/*
+---------------------------------------------------------------
+  Note that styles you apply to the main menu items are inherited by the sub menus items too.
+  If you'd like to avoid this, you could use child selectors (not supported by IE6) - for example:
+  .sm-clean > li > a { ... } instead of .sm-clean a { ... }
+---------------------------------------------------------------*/
+
+	#main-menu {
+		position:relative;
+		width:auto;
+		margin:0 0 10px 0;
+		z-index:300 !important;
+		padding-top:10px;
+	}
+
+	#main-menu ul {
+		/* fixed width only please - you can use the "subMenusMinWidth"/"subMenusMaxWidth" script options to override this if you like */
+	}
+
+
+/* Menu button
+===================*/
+
+@media only screen and (min-width: 960px) {
+	#navigatie { background:#198901 url(Image/bg-nav.png) repeat-x left bottom; }
+}
+
+#menu-button {
+  display:none;
+  font: 16px 'bowlby_oneregular', sans-serif;
+  letter-spacing:0.03em;
+  color:#fff;
+  cursor:pointer;
+  padding:10px;
+  background-color:#198901 !important;
+	background-image: url('Image/arrow-down.png');
+	background-repeat: no-repeat;
+	background-position: 95% 12px;
+	margin:35px 0 10px 0 !important;
+}
+#menu-button:before {
+  content:'Menu';
+}
+#menu-button.collapsed:before {
+  content:'Menu';
+}
+#menu-button:hover { color:#fff !important;}
+
+@media screen and (max-width: 959px) {
+/* show the button on small screens */
+  #menu-button {
+    display:block;
+	margin:0px 0 15px 0 !important;
+	width: 100% !important;
+  }
+  /* hide the menu when it has the "collapsed" class set by the script */
+  #main-menu.collapsed {
+    display:none;
+  }
+}
+
+/* Menu box
+===================*/
+
+	.sm-clean {
+		padding:0 6px;
+		background:none;
+	}
+	.sm-clean-vertical {
+		padding:10px 0;
+		-moz-border-radius:5px;
+		-webkit-border-radius:5px;
+		border-radius:5px;
+	}
+	.sm-clean ul {
+		border:1px solid #198901;
+		padding:5px 0;
+		background:#198901;
+	}
+	/* first sub level carets */
+	.sm-clean > li > ul:before {
+		display:none;
+	}
+	.sm-clean > li > ul:after {
+		display:none;
+	}
+	/* no carets for vertical main */
+	.sm-clean-vertical > li > ul:before, .sm-clean-vertical > li > ul:after {
+		display:none;
+	}
+
+
+/* Menu items
+===================*/
+
+	.sm-clean a {
+		padding:5px 10px 8px 20px !important; /* padding above submenu!! */
+		margin:4px 0;
+		color:#fff !important;
+		font: 17px 'bowlby_oneregular', sans-serif !important;
+		text-transform:uppercase;
+		text-decoration:none !important;
+		letter-spacing:0.03em;
+
+	}
+
+	.sm-clean a:hover, .sm-clean a:focus, .sm-clean a:active,
+	.sm-clean a.highlighted {
+		color:#ffea00 !important;
+	}
+		
+	.sm-clean a.has-submenu {
+		padding-right:25px;
+		color:#fff;
+	}
+
+	.sm-clean-vertical a,
+ 	.sm-clean ul a {
+		padding:10px 20px;
+	}
+	.sm-clean-vertical a.has-submenu,
+ 	.sm-clean ul a.has-submenu {
+		padding-right:40px;
+	}
+	.sm-clean ul a {
+	font: 14px/22px Arial, Helvetica, sans-serif !important; /* space between submenu items! */
+	text-transform:none;
+	color:#fff !important;
+	margin:2px 15px;
+	}
+	
+	.sm-clean ul a:hover, .sm-clean ul a:focus, .sm-clean ul a:active,
+	.sm-clean ul a.highlighted, .sm-clean ul a.has-submenu:hover {
+		color:#ffea00 !important;
+	}
+	/* current items - add the class manually to some item or check the "markCurrentItem" script option */
+	.sm-clean a.current, .sm-clean a.current:hover, .sm-clean a.current:focus, .sm-clean a.current:active {
+		color:#ffea00 !important;
+	}
+
+
+
+	@media only screen and (min-width: 200px) and (max-width: 959px) { /* different background + colors in dropdown navigatie submenu */
+	.sm-clean a, .sm-clean a.has-submenu { color:#198901 !important; }
+
+	.sm-clean ul a {
+	font: bold 16px/22px Arial, Helvetica, sans-serif !important; /* space between submenu items! */
+	text-transform:none;
+	color:#198901 !important;
+	margin:2px 15px;
+	}
+	.sm-clean a:hover, .sm-clean a.has-submenu:hover, .sm-clean a:focus, .sm-clean a:active, .sm-clean a.highlighted, .sm-clean a.current, .sm-clean a.current:hover, .sm-clean > li > a.current {
+		color:#ff6c00 !important;
+	}
+	.sm-clean ul a:hover, .sm-clean ul a:focus, .sm-clean ul a:active, .sm-clean ul a.highlighted, .sm-clean a.current {
+		color:#ff6c00 !important;
+	}
+
+	#main-menu {padding-top:0px;}
+
+	}
+	
+	
+
+
+/*
+---------------------------------------------------------------
+  Responsiveness
+  These will make the sub menus collapsible when the screen width is too small.
+---------------------------------------------------------------*/
+
+
+/* decrease horizontal main menu items left/right padding to avoid wrapping */
+@media only screen and (min-width: 1125px)  {
+	 .sm-clean:not(.sm-clean-vertical) > li > a {
+		font: 19px 'bowlby_oneregular', sans-serif !important; 
+	}
+}
+
+@media only screen and (min-width: 1025px)  {
+	 .sm-clean:not(.sm-clean-vertical) > li > a {
+		font: 17px 'bowlby_oneregular', sans-serif !important; 
+		padding-left:32px !important;
+		padding-right:32px !important;
+	}
+}
+
+@media screen and (min-width: 959px) {
+	 .sm-clean:not(.sm-clean-vertical) > li > a {
+		padding-left:13px !important;
+		padding-right:13px !important;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.sm-clean:not(.sm-clean-vertical) > li > a {
+		font: 15px 'bowlby_oneregular', sans-serif !important; 
+		padding-left:12px;
+		padding-right:12px;
+	}
+}
+
+
+@media screen and (max-width: 959px) {
+
+	/* The following will make the sub menus collapsible for small screen devices (it's not recommended editing these) */
+	ul.sm-clean{width:auto !important;}
+	ul.sm-clean ul{display:none;position:static !important;top:auto !important;left:auto !important;margin-left:0 !important;margin-top:0 !important;width:auto !important;min-width:0 !important;max-width:none !important;}
+	ul.sm-clean>li{float:none;}
+	ul.sm-clean>li>a,ul.sm-clean ul.sm-nowrap>li>a{white-space:normal;}
+	ul.sm-clean iframe{display:none;}
+
+	/* Uncomment this rule to disable completely the sub menus for small screen devices */
+	/*.sm-clean ul, .sm-clean span.sub-arrow, .sm-clean iframe {
+		display:none !important;
+	}*/
+
+/* Menu box
+===================*/
+
+	.sm-clean {
+		padding:0;
+	}
+	.sm-clean ul {
+		border:0;
+		padding:0;
+		/* darken the background of the sub menus */
+		/*background:rgba(130,130,130,0.1);*/
+		background:#fff !important;
+		-moz-border-radius:0;
+		-webkit-border-radius:0;
+		border-radius:0;
+		-moz-box-shadow:none;
+		-webkit-box-shadow:none;
+		box-shadow:none;
+	}
+	/* no carets */
+	.sm-clean > li > ul:before, .sm-clean > li > ul:after {
+		display:none;
+	}
+
+
+/* Menu items
+===================*/
+
+	.sm-clean a, .sm-clean > li > a.current  {
+		padding:13px 5px 13px 28px !important;
+		background:transparent !important;
+	}
+	.sm-clean a.current {
+		color:#ffea00 !important;
+	}
+	/* add some text indentation for the 2+ level sub menu items */
+	.sm-clean ul a {
+		border-left:8px solid transparent;
+	}
+	.sm-clean ul ul a {
+		border-left:16px solid transparent;
+	}
+	.sm-clean ul ul ul a {
+		border-left:24px solid transparent;
+	}
+	.sm-clean ul ul ul ul a {
+		border-left:32px solid transparent;
+	}
+	.sm-clean ul ul ul ul ul a {
+		border-left:40px solid transparent;
+	}
+
+
+
+/* Items separators
+===================*/
+
+	.sm-clean li {
+		border-top:1px solid rgba(0,0,0,0.05);
+	}
+	.sm-clean > li:first-child {
+		border-top:0;
+	}
+
+}
+
+
+

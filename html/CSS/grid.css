@@ -1,0 +1,969 @@
+/*
+	960 Grid System ~ Core CSS.
+	Learn more ~ http://960.gs/
+
+	Licensed under GPL and MIT.
+*/
+
+
+/* #Media Queries
+================================================== */
+
+	/* Bigger than standard 960 (devices and browsers) */
+	/* Minimum 1125px width  */
+	@media only screen and (min-width: 1125px)  {
+	body { background: url("Image/bg-header.jpg") no-repeat scroll center -28px #fff; }
+	#main { font: 12px/18px Verdana, Geneva, sans-serif; } 
+	.bottles, .bottles img { height:120px !important; width:437px !important; }
+	.bottles img { width:100% !important; }
+	#navigatie { margin-bottom:10px;}
+	#main .logo { background:url(Image/logo-brouwland-biercompetitie-nl.png) no-repeat left top !important; width:600px !important; height:115px !important; }
+	#main .logo-fr { background:url(Image/logo-brouwland-biercompetitie-fr-2.png) no-repeat left top !important; width:600px !important; height:115px !important; }
+	#topbox { font-size:18px; }
+	#box-contest img.img-win { width:400px !important; }
+	#box-help img.img-nuts { left:130px !important; top:90px !important; width:150px !important; height:103px !important; }
+	#box-content .box { width:29% !important; }
+	/*#box-contest .box { height:265px; }*/
+	#box-contest .box { height:350px !important; }
+	#main div.thumb { width:110px; height:73px; }
+	#main div.thumb img { width:110px !important; height:73px !important; }
+	#main div.verdeler { float:left; height:220px; }	
+
+	#main .hide { display:block; display: table-cell; }
+
+	}
+	
+	
+	/* Bigger than standard 960 (devices and browsers) */
+	/* Minimum 1025px width  */
+	@media only screen and (min-width: 1025px)  {
+	body { background: url("Image/bg-header.jpg") no-repeat scroll center -28px #fff; }
+	#main { font: 12px/18px Verdana, Geneva, sans-serif; } 
+	#main-menu { margin:10px 0 0 0 !important; }
+	#main .logo { width:470px; height:92px; background:url(Image/logo-brouwland-biercompetitie2-nl.png) no-repeat left top; }
+	#main .logo-fr { width:470px; height:92px; background:url(Image/logo-brouwland-biercompetitie2-fr.png) no-repeat left top; }
+	#navigatie { margin-bottom:10px;}
+	.bottles img { width:100% !important; height:100% !important; margin-top:10px; }
+	.bottles { width:280px !important; }
+	#topbox { font-size:18px; }
+	#box-help img.img-nuts { width:130px; height:89px; left:120px; top:90px; }
+	#box-contest img.img-win { width:300px; }
+	/*#box-contest .box { height:265px; }*/
+	#box-contest .info-finale { padding:50px 50px 15px 0 !important; }
+	#box-contest .box { height:260px; }
+    #box-contest .box2 { height: 380px; }
+	#box-contest h1 { font-size:60px; letter-spacing:1px; }
+	#box-content .box { width:29% !important; }
+	ul.menu { margin-left:35px; }
+	#main div.verdeler { float:left; height:220px; }	
+	#main img.img-dirk { width:200px; height:151px; }	
+	#main .back { margin:0 20px 0 0 !important;}
+	
+	#main .hide { display:block; display: table-cell; }
+
+	}
+
+	/* Bigger than standard 960 (devices and browsers) */
+	/* Tablet Landscape size to max 1024 (devices and browsers) */
+	/* 1024 x 768 (iPad - Landscape) */
+	@media only screen and (min-width: 960px) and (max-width: 1024px)  {
+	body { background: url("Image/bg-header.jpg") no-repeat scroll center -28px #fff; }
+	.container_16 { max-width:959px !important; }
+	#main { font: 12px/18px Verdana, Geneva, sans-serif; } 
+	#footer .footer-box, #footer .footer-slogan { max-width:960px; }
+	#footer .fr-smaller { font-size: 31px !important; }
+	#main .logo { width:305px; height:92px; background:url(Image/logo-brouwland-biercompetitie3-nl.png) no-repeat left top; }
+	#main .logo-fr { width:305px; height:92px; background:url(Image/logo-brouwland-biercompetitie3-fr.png) no-repeat left top; }
+	#navigatie { margin-bottom:10px;}
+	#main h1.txt-brown { font-size:40px !important; }
+	#main h1.txt-white { font-size:48px !important;}
+	.bottles img { width:100% !important; margin:15px 0 0 35px; }
+	.bottles { height:120px; width:270px; }
+	#topbox { font-size:18px; margin:0 !important; }
+	#box-contest h1 { font-size:60px; letter-spacing:1px; }
+	#box-contest .txt-fr { font-size:54px !important; }
+	#box-contest .txt-small-fr { font-size:27px !important;}
+	/*#box-contest .box { padding:20px 25px 20px 20px; height:250px; }*/
+	#box-contest .box { padding:20px 25px 20px 20px; height:320px; }
+    #box-contest .box2 { height: 320px; }
+	#box-contest .info-finale { padding:0 5px 15px 0 !important; }
+	#box-contest img.img-win { width:300px; }
+	#box-contest a:link, #box-contest a:visited { font-size:55px; }
+	#box-help img.img-nuts { width:120px !important; height:89px !important; left:140px !important; top:85px !important; }
+	#box-help h1.help, #box-help h1.help-fr {	font: 20px/24px 'bowlby_oneregular', sans-serif !important; }
+	#box-content .box { width:29% !important; }
+	#itemContainer li.item-hot, #itemContainer li.item-initiative { height:100px; }
+	ul.menu { margin-left:35px; }
+	.box-info {	width:89%; }
+	#box-alert img { width:98%; }
+	#main div.verdeler { float:left; height:220px; }	
+	#main img.img-dirk { width:200px; height:151px; }	
+	#main .back { margin:0 20px 0 0 !important;}
+	
+	#main .hide { display:block; display: table-cell; }
+	#formulier .textarea { width:270px !important; }
+	.center{left: 0px !important;}
+	}
+
+
+	/* Smaller than standard 960 (devices and browsers) */
+	/* Tablet Portrait size to max 959 (devices and browsers) */
+	/* 768 x 1024 (iPad - Portrait) */
+	@media only screen and (min-width: 767px) and (max-width: 959px) {
+	body { background: url("Image/bg-header.jpg") no-repeat scroll center -28px #fff; }
+	#footer .item { float:left; padding:0 7px 10px 7px; width:23% !important; }
+	#footer .first { margin-left:15px !important; width:145px !important;}
+	#footer .last { width:260px !important; }
+	#footer .questions { font: 30px 'snicklesregular', sans-serif; margin-top:-15px; width:258px !important; }
+	#footer .fr-smaller { font-size: 27px !important; }
+	#main { padding-bottom: 190px; } 
+	#main-menu { margin:0 !important; }
+	#navigatie { margin-top:10px !important; }
+	#topbox { position:absolute; top:0px; right:0px;}
+	#main .topspace { padding-top:15px; }
+	.bottles { display:none; }
+	#main .logo { background:url(Image/logo-brouwland-biercompetitie-nl.png) no-repeat left top !important; width:600px !important; height:115px !important; }
+	#main .logo-fr { background:url(Image/logo-brouwland-biercompetitie-fr.png) no-repeat left top !important; width:600px !important; height:115px !important; }
+	#box-help img.img-nuts { left:200px !important; top:60px !important; }
+	#box-contest img.img-win { width:350px !important; float:none; margin:-10px 0 0 175px; left:50%;  }
+	/*#box-contest .box { padding:20px 20px 20px 15px !important; height:500px; }*/
+	#box-contest .box { padding:20px 20px 20px 15px !important; height:430px; }
+    #box-contest .box2 { height: 350px; }
+	#box-contest .info { float:none; padding:0 45px 15px 0; text-align:left; }
+	#box-contest a:link, #box-contest a:visited { font-size:55px; }
+	#box-contest p { float:left; width:350px; text-align:left; }
+	#box-contest p img { padding-top:15px; }
+	#box-contest .txt-fr { font-size:62px !important;}
+	#box-content .box { width:45% !important; }
+	#box-content .second { border-right:none !important; }
+	#box-content .second img { float:left !important; }
+	#box-content .last { border-top: 2px dotted #fff; clear:both; width:95% !important; }
+	#itemContainer li.item-hot { float:none !important; width:98% !important; height:auto; }
+	ul.menu { margin-left:35px; }
+	ul.menu li img { margin-bottom:25px; }
+	#main div.verdeler { float:left; height:220px; }	
+	#main a.backlink:link, #main a.backlink:visited { padding:9px 12px; -webkit-border-radius: 50px; -moz-border-radius: 50px; border-radius: 50px; }
+	
+	#main .minimum { width:98%; }
+	#main .minimum-except { width:46% !important; min-height:480px !important; }
+	#main .hide { display:block; display: table-cell; }
+	#formulier .textarea { width:200px; height:120px; }
+	.center{left: 0px !important;}
+	.sideside{display: inline !important; width: 600px !important;}
+	}
+
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	/* 480 x 640 (small tablet) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+	body { background: url("Image/bg-header.jpg") no-repeat scroll center -28px #fff; }
+	#footer { margin-top: -280px; height: 280px; position: relative !important; } 
+	#main { padding-bottom: 280px; } 
+	#main .logo { width:470px; height:92px; background:url(Image/logo-brouwland-biercompetitie2-nl.png) no-repeat left top; }
+	#main .logo-fr { width:470px; height:92px; background:url(Image/logo-brouwland-biercompetitie2-fr.png) no-repeat left top; }
+	#footer .footer-box { height: 160px; }
+	#footer .item { text-align:center !important; width:35% !important; }
+	#footer .questions { font: 25px 'snicklesregular', sans-serif; margin-top:-15px; width:55% !important; }
+	#footer .first { margin-left:5px; }
+	#footer .last { min-width:260px !important; float:none; text-align:center !important; }
+	#footer .dewitte { float:none; clear:both; text-align:center; width:400px !important; position:relative !important; }
+	#footer .slogan { width:100%; }
+	#navigatie { width:95% !important; margin-top:10px !important; }
+	.bottles { display:none; }
+	#formulier .textarea { width:280px; height:130px; }
+	#topbox { display:none; }
+	#footer .questions { text-align:left !important;}
+	#footer .slogan {font-size: 12px;}
+	#footer .last { clear:both; width:150px !important; margin:0 auto; }
+	#footer span a.language { float:left; }
+	#footer .dewitte { float:none; clear:both; text-align:center; }
+	#main h1 { font-size:38px;}
+	#main h1.brown { font-size:22px;}
+	#box-help h1.help, #box-help h1.help-fr { font: 20px/24px 'bowlby_oneregular', sans-serif;}
+	#box-help img.img-dirk { width:200px; height:151px;}
+	#box-help img.img-nuts { left:130px !important; top:100px !important; width:120px !important; height:83px !important; }
+	#box-contest .box { padding:20px 15px 20px 20px;}
+    #box-contest .box2 { height: 300px; }
+	#box-contest .info { float:none !important; padding:0 15px 15px 0 !important; text-align:left !important; height:170px; }
+	#box-contest .info-finale { float:none !important; padding:0 15px 15px 0 !important; text-align:left !important; height:130px; }
+	#box-contest .txt-small, #box-contest .txt-small-fr { font-size:20px;}
+	#box-contest a:link, #box-contest a:visited { font-size:40px; margin:10px 0 30px 25px !important; float:left; }
+	#box-contest img.img-sponsors { float:none !important; display:block; margin-top:5px; }
+	#box-contest p { margin-top:0px !important; text-align:center; }
+	#box-contest p img { margin:0 auto; }
+	#box-content .box { width:100% !important; border-right:none; border-bottom: 2px dotted #fff; margin-left:0px !important; }
+	#box-content .last { border-right:none; border-bottom: none; }
+	#box-contest .bg-foto-finale img { width:95%; margin-bottom:15px; }
+	.floating a { float:none !important; margin-left:0px !important; }
+	#itemContainer li.item-hot { float:none; width:98%; height:auto; }
+	#gallery img { width:100px; height:67px; }
+	ul.menu li a, ul.menu ul.menu li a { font: 14px/20px 'bowlby_oneregular', sans-serif; }		
+	.box-info {	width:89%; }
+	ul.menu li img { width:40%; margin-bottom:15px; }
+	#box-alert img { width:99%; }
+	#main a.backlink:link, #main a.backlink:visited { padding:9px 12px; -webkit-border-radius: 50px; -moz-border-radius: 50px; border-radius: 50px; }
+	
+	#main .hide { display:none; }
+	#main .minimum, #main .minimum-except { width:98%; }
+	#main .topspace { padding-top:15px; }
+	.center{left: 0px !important;}
+	.sideside{display: inline !important; width: 600px !important;}
+	}
+
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	/* 320 x 480 (iPhone) */
+	@media only screen and (max-width: 479px) {
+	body { background: url("Image/bg-header.jpg") no-repeat scroll center -28px #fff; }
+	#main { padding-bottom: 330px; } 
+	#footer { margin-top: -330px; height: 330px; position: relative !important; } 
+	#footer .footer-box { height: 225px; }
+	#footer .item { float:none; text-align:center; padding:4px 0; width:98% !important; }
+	#footer .first { margin-left:0px; text-align:center; }
+	#footer .last { min-width:260px !important; float:none; text-align:center !important;}
+	#footer .questions { font: 25px 'snicklesregular', sans-serif; width:98% !important; margin-top:-5px; }
+	#footer .slogan {font-size: 11px; width:100%; }
+	#footer .last { font-size:16px; clear:both; width:150px !important; margin:0 auto; }
+	#footer span a.language { float:left; }
+	#footer .dewitte { float:none; clear:both; text-align:center; width:100%; padding-top:10px !important; }
+	#footer .img-cap { display:none;}
+	#main .logo { width:305px; height:92px; background:url(Image/logo-brouwland-biercompetitie3-nl.png) no-repeat left top; }
+	#main .logo-fr { width:305px; height:92px; background:url(Image/logo-brouwland-biercompetitie3-fr.png) no-repeat left top; }
+	#navigatie { width:93% !important; margin-top:10px !important; }
+	.bottles { display:none; }
+	#topbox { display:none; }
+	#main h1 { font-size:35px; }
+	#main h1.brown { font-size:20px;}
+	#main div.thumb-home { width:80px; height:53px; }
+	#press article, #itemContainer article { font-size:12px; line-height:16px; }
+	#box-help img.img-nuts { position:absolute; left:20px; top:110px; width:120px; height:83px; }
+	#box-help img.img-dirk { display:none !important;}
+	#box-contest .box { padding:20px 15px 20px 20px;}
+    #box-contest .box2 { height: 300px;}
+	#box-contest .info { float:none !important; padding:0 15px 15px 0 !important; text-align:left !important; height:230px; }
+	#box-contest .info-finale { float:none !important; padding:0 15px 15px 0 !important; text-align:left !important; height:95px; }
+	#box-contest .txt-small, #box-contest .txt-small-fr { font-size:25px;}
+	#box-contest a:link, #box-contest a:visited { font-size:40px; margin:10px 0 5px 25px !important; float:left; }
+	#box-contest img.img-sponsors { float:none !important; display:block; margin-top:5px; }
+	#box-contest p { margin-top:0px !important; text-align:left; font-size:13px; }
+	#box-contest p img { margin:0 auto; }
+	#box-contest img.img-win { width:280px !important; padding-bottom:10px; }
+	#box-contest .bg-foto { left:-50px; }
+	#box-contest .bg-foto-finale img { width:95%; margin-bottom:15px; }
+	#box-contest h1 { font-size:35px; line-height:25px !important; margin:0 !important; padding:0 !important; }
+	#box-contest h1 br { margin-bottom:18px !important; }
+	#box-content .box { width:100% !important; border-right:none; border-bottom: 2px dotted #fff; margin-left:0px !important; }
+	#box-content .last { border-right:none; border-bottom: none; }
+	.floating a { float:none !important; margin-left:0px !important; }
+	#box-content .box img { width:90%; }
+	#itemContainer li.item-hot { float:none; width:98% !important; height:auto; margin-bottom:12px; }
+	#gallery { margin:0 0 0 5px;}
+	#gallery img { width:85px; height:57px; }
+	ul.menu li a, ul.menu ul.menu li a { font: 13px/19px 'bowlby_oneregular', sans-serif; }		
+	ul#testimonials li { font: 14px/17px Arial, Helvetica, sans-serif; }	
+	.box-info {	width:85%; }
+	ul.menu li ul { padding:0 !important; margin-left:20px !important; }
+	ul.menu li img { width:80%; float:none !important; margin:0 auto; padding:5px 0; }
+	#box-alert img { width:99%; }
+	#main a.backlink:link, #main a.backlink:visited { padding:9px 12px; -webkit-border-radius: 50px; -moz-border-radius: 50px; border-radius: 50px; }
+	.thumb-testimonial, .thumb-testimonial-landscape { float:none; display:block; margin:6px 14px 10px 0; }
+	
+	#main .topspace { padding-top:5px; }
+	#main .hide { display:none; }
+	#main .minimum, #main .minimum-except { width:98%; }
+	#formulier .textarea { width:280px; height:120px; }
+	#formulier .item1, .form-item1 { width:300px; padding:12px 10px 0 0; text-align:left; float:left; }
+	#formulier .item2, .form-item2 { width:300px; padding-top:6px; float:left }
+	#formulier .inputveld, .inputveldje { height: 44px; width: 200px; }
+	.center{left: 0px !important;}
+	.sideside{display: inline !important; width: 400px !important;}
+	}
+
+
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	/* 240 x 320 (small phone) */
+	@media only screen and (max-width: 319px) {
+	body { background: url("Image/bg-header.jpg") no-repeat scroll center -28px #fff; }
+	#main { padding-bottom: 360px; } 
+	#footer { margin-top: -360px; height: 360px; font: 12px/16px Arial, Helvetica, sans-serif; } 
+	#footer .footer-box { height: 285px; }
+	#footer .item { float:none; text-align:center; padding:4px 0; }
+	#footer .item-logo { float:none; text-align:center; padding:0; }
+	#footer .dewitte { padding-top:10px !important; }
+	#footer .last { min-width:180px !important; float:none; text-align:center !important;}
+	#main .logo { width:225px; height:82px; background:url(Image/logo-brouwland-biercompetitie4-nl.png) no-repeat left top; }
+	#main .logo-fr { width:225px; height:82px; background:url(Image/logo-brouwland-biercompetitie4-fr.png) no-repeat left top; }
+	#navigatie { width:91% !important; margin-top:5px !important; }
+	#main h1 { font-size:32px;}
+	#main img.img-floatleft { float:none; margin:0; }
+	#press time { font-size:10px !important; margin-right:0px !important; }
+	#box-help h1.help { font: 20px/24px 'bowlby_oneregular', sans-serif;}
+	#box-help h1.help-fr { font: 18px/22px 'bowlby_oneregular', sans-serif;}
+	#box-help a:link, #box-help a:visited { margin:5px 15px 0 0 !important; }
+	#box-contest .info { padding:15px 15px 15px 0 !important; text-align:left !important; height:210px; }
+	#box-contest img.img-win { width:200px !important; }
+	#box-contest a:link, #box-contest a:visited { font-size:30px; margin:10px 0 5px 0 !important; }
+	#box-contest p {text-align:center; font-size:12px; padding-top:20px !important; }
+	#box-contest img.img-sponsors { float:none; width:100% !important; }
+	#box-contest h1 { font-size:34px; line-height:28px !important; }
+	#box-contest h1 br { margin-bottom:18px !important; }
+	#box-contest .txt-small, #box-contest .txt-small-fr { line-height:20px !important; font-size:25px !important;}
+	#itemContainer li.item-hot { float:none; width:98%; }
+	#main div.thumb { width:65px; height:48px; }
+	#main div.thumb img { width:65px !important; height:48px !important; }
+	#gallery { margin:0 0 0 10px;}
+	#gallery img { width:95px; height:63px; }
+	.box-info {	width:84%; padding:10px 15px 5px 15px; }
+		
+	#main .hide { display:none; }
+	#formulier .textarea { width:200px; height:120px; }
+	#formulier .item1, .form-item1 { width:230px; padding:12px 0 0 0; text-align:left; float:left; }
+	#formulier .item2, .form-item2 { width:230px; padding-top:6px; float:left }
+	#formulier .inputveld, .inputveldje { height: 44px; width: 180px; }
+	.center{left: 0px !important;}
+	.sideside{display: inline !important; width: 100px !important;}
+	}
+	
+
+/* =Containers
+--------------------------------------------------------------------------------*/
+
+.container_16
+{
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top:0px;
+	*background:none;
+}
+
+.container_white
+{
+	margin-left: auto;
+	margin-right: auto;
+	padding:0 0 10px 0;
+	position:relative;
+	background:#fff;
+	width:100%;
+}
+
+/* =Grid >> Global
+--------------------------------------------------------------------------------*/
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.grid_13,
+.grid_14,
+.grid_15,
+.grid_16,
+.grid_17,
+.grid_18,
+.grid_19,
+.grid_20
+{
+	display: inline;
+	float: left;
+	margin-left: 1%;
+	margin-right: 1%;
+	*margin-right: 0%; /* IE7 prevent scrollbars */
+}
+
+.grid_21,
+.grid_22,
+.grid_23,
+.grid_24,
+.grid_25,
+.grid_26
+{
+	display: inline;
+	float: left;
+	margin-left: 0%;
+	margin-right: 0%;
+	*margin-right: 0%; /* IE7 prevent scrollbars */
+}
+
+
+@media only screen and (min-width: 960px)  {
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12,
+.grid_13,
+.grid_14,
+.grid_15,
+.grid_16,
+.grid_17,
+.grid_18,
+.grid_19,
+.grid_20
+{
+	margin-left: 1%;
+	margin-right: 1%;
+	*margin-right: 0%; /* IE7 prevent scrollbars */
+}
+
+.grid_21,
+.grid_22,
+.grid_23,
+.grid_24,
+.grid_25,
+.grid_26
+{
+	display: inline;
+	float: left;
+	margin-left: 0%;
+	margin-right: 0%;
+	*margin-right: 0%; /* IE7 prevent scrollbars */
+}
+	
+}
+
+.container_12 .grid_3,
+.container_16 .grid_4
+{
+	width: 23%;
+}
+
+.container_12 .grid_6,
+.container_16 .grid_8
+{
+	width: 48%;
+}
+
+.container_12 .grid_9,
+.container_16 .grid_12
+{
+	width: 73%;
+}
+
+.container_12 .grid_12,
+.container_16 .grid_16
+{
+	width: 98%;
+}
+
+@media only screen and (min-width: 960px)  {
+.container_12 .grid_12,
+.container_16 .grid_16
+{
+	width: 100%;
+}
+
+}
+
+/* =Grid >> Children (Alpha ~ First, Omega ~ Last)
+--------------------------------------------------------------------------------*/
+
+.alpha
+{
+	margin-left: 0;
+}
+
+.omega
+{
+	margin-right: 0;
+}
+
+/* =Grid >> 12 Columns
+--------------------------------------------------------------------------------*/
+
+.container_12 .grid_1
+{
+	width: 6.333%;
+}
+
+.container_12 .grid_2
+{
+	width: 14.666%;
+}
+
+.container_12 .grid_4
+{
+	width: 31.333%;
+}
+
+.container_12 .grid_5
+{
+	width: 39.666%;
+}
+
+.container_12 .grid_7
+{
+	width: 56.333%;
+}
+
+.container_12 .grid_8
+{
+	width: 64.666%;
+}
+
+.container_12 .grid_10
+{
+	width: 81.333%;
+}
+
+.container_12 .grid_11
+{
+	width: 89.666%;
+}
+
+/* =Grid >> 16 Columns
+--------------------------------------------------------------------------------*/
+
+.container_16 .grid_1
+{
+	width: 4.25%;
+}
+
+.container_16 .grid_2
+{
+	width: 10.5%;
+}
+
+.container_16 .grid_3
+{
+	width: 16.75%;
+}
+
+.container_16 .grid_5
+{
+	width: 29.25%;
+}
+
+.container_16 .grid_6
+{
+	width: 35.5%;
+}
+
+.container_16 .grid_7
+{
+	width: 41.75%;
+}
+
+.container_16 .grid_9
+{
+	width: 54.25%;
+}
+
+.container_16 .grid_10
+{
+	width: 60.5%;
+}
+
+.container_16 .grid_11
+{
+	width: 66.75%;
+}
+
+.container_16 .grid_13
+{
+	width: 79.25%;
+}
+
+.container_16 .grid_14
+{
+	width: 85.5%;
+}
+
+.container_16 .grid_15
+{
+	width: 91.75%;
+}
+
+.container_16 .grid_16
+{
+	width: 98%;
+}
+
+.container_16 .grid_17
+{
+	width: 69%;
+}
+
+.container_16 .grid_18
+{
+	width: 25%;
+}
+
+.container_16 .grid_19
+{
+	width: 15%;
+	height: 20%;
+	position: absolute;
+}
+
+.container_16 .grid_20
+{
+	width: auto;
+	height: auto;
+	position: relative;
+}
+
+.container_16 .grid_21
+{
+	width: 26.4%;
+	height: auto;
+	position: relative;
+}
+
+.container_16 .grid_22
+{
+	width: 10.4%;
+	height: auto;
+	position: relative;
+}
+
+.container_16 .grid_23
+{
+	width: 9.2%;
+	height: auto;
+	position: relative;
+}
+
+.container_16 .grid_24
+{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.container_16 .grid_25
+{
+	width: 69%;
+	height: auto;
+	position: relative;
+
+}
+
+.container_16 .grid_26
+{
+	width: 60em;
+	height: auto;
+	position: relative;
+
+}
+
+
+/* =Prefix Extra Space >> Global
+--------------------------------------------------------------------------------*/
+
+.container_12 .prefix_3,
+.container_16 .prefix_4
+{
+	padding-left: 25%;
+}
+
+.container_12 .prefix_6,
+.container_16 .prefix_8
+{
+	padding-left: 50%;
+}
+
+.container_12 .prefix_9,
+.container_16 .prefix_12
+{
+	padding-left: 75%;
+}
+
+/* =Prefix Extra Space >> 12 Columns
+--------------------------------------------------------------------------------*/
+
+.container_12 .prefix_1
+{
+	padding-left: 8.333%;
+}
+
+.container_12 .prefix_2
+{
+	padding-left: 16.666%;
+}
+
+.container_12 .prefix_4
+{
+	padding-left: 33.333%;
+}
+
+.container_12 .prefix_5
+{
+	padding-left: 41.666%;
+}
+
+.container_12 .prefix_7
+{
+	padding-left: 58.333%;
+}
+
+.container_12 .prefix_8
+{
+	padding-left: 66.666%;
+}
+
+.container_12 .prefix_10
+{
+	padding-left: 83.333%;
+}
+
+.container_12 .prefix_11
+{
+	padding-left: 91.666%;
+}
+
+/* =Prefix Extra Space >> 16 Columns
+--------------------------------------------------------------------------------*/
+
+.container_16 .prefix_1
+{
+	padding-left: 6.25%;
+}
+
+.container_16 .prefix_2
+{
+	padding-left: 12.5%;
+}
+
+.container_16 .prefix_3
+{
+	padding-left: 18.75%;
+}
+
+.container_16 .prefix_5
+{
+	padding-left: 31.25%;
+}
+
+.container_16 .prefix_6
+{
+	padding-left: 37.5%;
+}
+
+.container_16 .prefix_7
+{
+	padding-left: 43.75%;
+}
+
+.container_16 .prefix_9
+{
+	padding-left: 56.25%;
+}
+
+.container_16 .prefix_10
+{
+	padding-left: 62.5%;
+}
+
+.container_16 .prefix_11
+{
+	padding-left: 68.75%;
+}
+
+.container_16 .prefix_13
+{
+	padding-left: 81.25%;
+}
+
+.container_16 .prefix_14
+{
+	padding-left: 87.5%;
+}
+
+.container_16 .prefix_15
+{
+	padding-left: 93.75%;
+}
+
+/* =Suffix Extra Space >> Global
+--------------------------------------------------------------------------------*/
+
+.container_12 .suffix_3,
+.container_16 .suffix_4
+{
+	padding-right: 25%;
+}
+
+.container_12 .suffix_6,
+.container_16 .suffix_8
+{
+	padding-right: 50%;
+}
+
+.container_12 .suffix_9,
+.container_16 .suffix_12
+{
+	padding-right: 75%;
+}
+
+/* =Suffix Extra Space >> 12 Columns
+--------------------------------------------------------------------------------*/
+
+.container_12 .suffix_1
+{
+	padding-right: 8.333%;
+}
+
+.container_12 .suffix_2
+{
+	padding-right: 16.666%;
+}
+
+.container_12 .suffix_4
+{
+	padding-right: 33.333%;
+}
+
+.container_12 .suffix_5
+{
+	padding-right: 41.666%;
+}
+
+.container_12 .suffix_7
+{
+	padding-right: 58.333%;
+}
+
+.container_12 .suffix_8
+{
+	padding-right: 66.666%;
+}
+
+.container_12 .suffix_10
+{
+	padding-right: 83.333%;
+}
+
+.container_12 .suffix_11
+{
+	padding-right: 91.666%;
+}
+
+/* =Suffix Extra Space >> 16 Columns
+--------------------------------------------------------------------------------*/
+
+.container_16 .suffix_1
+{
+	padding-right: 6.25%;
+}
+
+.container_16 .suffix_2
+{
+	padding-right: 16.5%;
+}
+
+.container_16 .suffix_3
+{
+	padding-right: 18.75%;
+}
+
+.container_16 .suffix_5
+{
+	padding-right: 31.25%;
+}
+
+.container_16 .suffix_6
+{
+	padding-right: 37.5%;
+}
+
+.container_16 .suffix_7
+{
+	padding-right: 43.75%;
+}
+
+.container_16 .suffix_9
+{
+	padding-right: 56.25%;
+}
+
+.container_16 .suffix_10
+{
+	padding-right: 62.5%;
+}
+
+.container_16 .suffix_11
+{
+	padding-right: 68.75%;
+}
+
+.container_16 .suffix_13
+{
+	padding-right: 81.25%;
+}
+
+.container_16 .suffix_14
+{
+	padding-right: 87.5%;
+}
+
+.container_16 .suffix_15
+{
+	padding-right: 93.75%;
+}
+
+/* =Clear Floated Elements
+--------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+html body * span.clear,
+html body * div.clear,
+html body * li.clear,
+html body * dd.clear
+{
+	background: none;
+	border: 0;
+	clear: both;
+	display: block;
+	float: none;
+	font-size: 0;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+/* http://www.positioniseverything.net/easyclearing.html */
+
+.clearfix:after
+{
+	clear: both;
+	content: '.';
+	display: block;
+	visibility: hidden;
+	height: 0;
+}
+
+.clearfix
+{
+	display: inline-block;
+}
+
+* html .clearfix
+{
+	height: 1%;
+}
+
+.clearfix
+{
+	display: block;
+}
